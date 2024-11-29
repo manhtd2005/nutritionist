@@ -1,0 +1,126 @@
+// Hero-main
+.hero__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    &--media {
+        &__img {
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+        }
+    }
+
+    &--content {
+        margin-top: 128px;
+        max-width: 610px;
+
+        &__title {
+            position: relative;
+            color: var(--banner-bg);
+            font-size: 2.2rem;
+            font-weight: 600;
+
+            &::after {
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                content: "";
+                display: inline;
+                width: 300px;
+                height: 4px;
+                background: var(--button-bg);
+            }
+        }
+
+        &__listButton {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+        &__btn {
+            border: 1px solid var(--border-card-color) !important;
+            background: var(--card-bg) !important;
+        }
+
+        &__cta {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            &--list {
+                padding: 6px 8px;
+                border-radius: 58px;
+                border: 1px solid var(--button-bg);
+
+                &__user {
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    &:not(:first-child) {
+                        margin-left: -15px;
+                    }
+                }
+            }
+
+            &--desc {
+                color: #234338;
+                font-size: 1.8rem;
+                font-weight: 600;
+                line-height: 150%;
+                &Number {
+                    color: #468671;
+                }
+            }
+        }
+    }
+}
+
+// Service
+.features {
+    padding: 100px 0;
+}
+
+// Blogs
+.blog {
+    padding-bottom: 100px;
+}
+
+//Testimonials
+.testimonial {
+    padding-bottom: 100px;
+
+    &__arrow {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        &--icon {
+            border-radius: 6px;
+            background: var(--card-bg);
+            cursor: pointer;
+        }
+
+        &--dots {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+    }
+}
+
+// Pricing
+.pricing {
+    margin-bottom: 100px;
+}

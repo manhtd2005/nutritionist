@@ -1,0 +1,19 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    &__icon {
+        width: 34px;
+        height: 34px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    &__brand {
+        font-size: 2em;
+        color: var(--body-bg);
+        font-weight: 600;
+        opacity: 0.9;
+    }
+}

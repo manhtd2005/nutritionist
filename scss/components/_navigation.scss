@@ -1,0 +1,24 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        &--link {
+            padding: 5px 10px;
+            color: var(--desc-banner-color);
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        &:hover &--link {
+            color: var(--button-bg);
+        }
+    }
+}

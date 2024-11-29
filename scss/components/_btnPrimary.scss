@@ -1,0 +1,14 @@
+.btn__primary {
+    padding: 12px 16px;
+    border-radius: 6px;
+    background: var(--button-bg);
+    color: var(--button-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5;
+    
+    &:hover {
+        opacity: 0.6;
+        transition: 0.25s;
+    }
+}

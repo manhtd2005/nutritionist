@@ -1,0 +1,34 @@
+.heading {
+    color: var(--heading-color);
+    line-height: 150%;
+
+    &__primary {
+        font-size: 3.8rem;
+        font-weight: 700;
+    }
+
+    &__secondary {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+.desc {
+    &__primary {
+        display: inline-block;
+        max-width: 780px;
+        margin-top: 24px;
+        color: var(--desc-color);
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 150%; /* 24px */
+    }
+
+    &__secondary{
+        color: var(--button-color);
+    }
+}
+
+.pricing__choice--toggle {
+    all: unset;
+}

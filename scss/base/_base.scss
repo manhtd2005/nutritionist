@@ -15,9 +15,9 @@ html {
 }
 
 body {
+    // overflow-x: hidden;
     font-size: 1.6rem;
-    font-family: Lato, sans-serif;
-    color: var(--text-color);
+    font-family: Urbanist, sans-serif;
     background: var(--body-bg);
 }
 
@@ -51,40 +51,4 @@ select {
 input,
 textarea {
     background: transparent;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active,
-input:-webkit-autofill:hover {
-    transition: background-color 1s 9999s;
-    -webkit-text-fill-color: var(--text-color);
-    caret-color: var(--text-color);
-}
-
-.icon {
-    filter: var(--icon-color);
-}
-
-.container {
-    @include abstracts.screen(sm) {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-    }
-}
-
-i,
-em {
-    font-style: italic;
-}
-
-b,
-strong {
-    font-weight: 600;
-}
-
-.separate {
-    margin: var(--margin) 0;
-    height: 1px;
-    background: var(--separate-color);
 }

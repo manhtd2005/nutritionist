@@ -1,0 +1,63 @@
+.header {
+    background: var(--banner-bg);
+
+    &__top {
+        padding: 14px 0;
+
+        &--link {
+            padding: 10px 0;
+            border-radius: 6px;
+            border: 1px solid var(--border-card-color);
+            background: var(--banner-inner-bg);
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+
+            &::before {
+                content: url(../../assets/icon/lapter.svg);
+                display: inline-block;
+                position: absolute;
+                left: 0;
+            }
+
+            &::after {
+                content: url(../../assets/icon/lapter.svg);
+                transform: scaleX(-1); // Lật ảnh lại
+                display: inline-block;
+                position: absolute;
+                right: 0;
+            }
+        }
+
+        &--icon {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        &--title {
+            color: var(--desc-banner-color);
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+
+        &--arrow {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+    }
+
+    &__down {
+        padding: 16px 0;
+        border-top: 2px solid var(--banner-inner-bg);
+
+        &--inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

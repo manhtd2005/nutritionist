@@ -1,0 +1,27 @@
+.card__primary {
+    padding: 40px 40px;
+    border-radius: 12px;
+    border: 1px solid var(--border-card-color);
+    background: var(--card-bg);
+
+    &--content {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        &__icon {
+            padding: 14px;
+            display: inline-block;
+            background: var(--button-bg);
+            border-radius: 8px;
+
+            &--img {
+                width: 36px;
+                height: 36px;
+                flex-shrink: 0;
+                object-fit: cover;
+            }
+        }
+    }
+}
