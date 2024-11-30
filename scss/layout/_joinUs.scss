@@ -1,0 +1,16 @@
+.joinus {
+    margin-bottom: 100px;
+    display: flex;
+    padding: 60px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid var(--border-card-color);
+    background: var(--card-bg);
+
+    &__heading {
+        font-size: 2.6rem;
+        font-weight: 600;
+        line-height: 150%;
+    }
+}

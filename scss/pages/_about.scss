@@ -1,0 +1,63 @@
+// Hero
+.hero__about {
+    margin: 100px 0;
+    &--blockList {
+        &__item {
+            border-radius: 8px;
+            background: var(--button-bg);
+            &--mini {
+                display: inline-block;
+            }
+            &--logo {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+// Welcome
+.welcome {
+    padding: 80px;
+    background: var(--hero-bg);
+
+    &__title--desc {
+        max-width: initial;
+        white-space: pre-line;
+    }
+}
+
+// Story
+.story {
+    margin: 100px 0;
+
+    &__table {
+        background: var(--card-bg);
+
+        &--media {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &--content {
+            padding: 0 60px;
+            display:inline-flex;
+            text-align: left;
+            flex-direction: column;
+
+            &__left{
+                text-align: right;
+            }
+
+            &__heading {
+                display: inline;
+                border-bottom: 3px solid var(--Green-70, #cbea7b);
+            }
+        }
+    }
+}
+
+// Achievements
+.achivement {
+    margin-bottom: 100px;
+}

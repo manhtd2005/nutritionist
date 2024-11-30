@@ -1423,6 +1423,22 @@ html {
   margin-bottom: 80px;
 }
 
+.joinus {
+  margin-bottom: 100px;
+  display: flex;
+  padding: 60px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 1px solid var(--border-card-color);
+  background: var(--card-bg);
+}
+.joinus__heading {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+
 .footer {
   padding: 40px 0;
   background: var(--banner-bg);
@@ -1853,6 +1869,58 @@ html {
 }
 
 .pricing {
+  margin-bottom: 100px;
+}
+
+.hero__about {
+  margin: 100px 0;
+}
+.hero__about--blockList__item {
+  border-radius: 8px;
+  background: var(--button-bg);
+}
+.hero__about--blockList__item--mini {
+  display: inline-block;
+}
+.hero__about--blockList__item--logo {
+  width: 100px;
+  height: 100px;
+}
+
+.welcome {
+  padding: 80px;
+  background: var(--hero-bg);
+}
+.welcome__title--desc {
+  max-width: initial;
+  white-space: pre-line;
+}
+
+.story {
+  margin: 100px 0;
+}
+.story__table {
+  background: var(--card-bg);
+}
+.story__table--media {
+  width: 100%;
+  object-fit: cover;
+}
+.story__table--content {
+  padding: 0 60px;
+  display: inline-flex;
+  text-align: left;
+  flex-direction: column;
+}
+.story__table--content__left {
+  text-align: right;
+}
+.story__table--content__heading {
+  display: inline;
+  border-bottom: 3px solid var(--Green-70, #cbea7b);
+}
+
+.achivement {
   margin-bottom: 100px;
 }
 
