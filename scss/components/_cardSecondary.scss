@@ -1,4 +1,7 @@
 .card__secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 30px;
     border-radius: 10px;
     border: 1px solid var(--border-card-color);
@@ -20,6 +23,7 @@
 
     &--user {
         display: flex;
+        margin-top: 16px;
         padding: 16px 14px 16px 16px;
         align-items: center;
         border-radius: 10px;
@@ -36,6 +40,8 @@
             height: 50px;
             border-radius: 6px;
             object-fit: cover;
+            fill: #fff;
+            stroke: #000;
         }
 
         &__name {
@@ -67,7 +73,9 @@
             &--img {
                 width: 20px;
                 height: 20px;
+                fill: #fff;
             }
+
             &:hover &--img {
                 opacity: 0.8;
             }

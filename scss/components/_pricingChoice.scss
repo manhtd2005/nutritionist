@@ -1,5 +1,68 @@
-.pricing__choice {
-    text-align: center;
+.pricing {
+
+    &__choice {
+        text-align: center;
+
+        &--desc {
+            margin: 14px 0 60px;
+            display: block;
+            color: #4c4c4d;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 150%; /* 27px */
+        }
+    }
+
+    &__switch {
+        &--label {
+            position: relative;
+            padding: 0 34px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 8px;
+            border: 1px solid #dcf1a7;
+            background: #fafdf2;
+            width: 240px;
+            height: 70px;
+            user-select: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 110px;
+                height: 75%;
+                background: #234338;
+                border-radius: inherit;
+                transition: transform 0.3s ease;
+            }
+
+            &__value {
+                position: relative;
+                z-index: 1;
+                color: #fff;
+                font-size: 1.8rem;
+                font-weight: 600;
+                line-height: 150%;
+                transition: color 0.3s ease;
+            }
+        }
+
+        &--input:checked + &--label::before {
+            width: 110px;
+            left: auto;
+            right: 10px;
+        }
+
+        &--input:not(:checked) + &--label &--label__value:nth-of-type(2),
+        &--input:checked + &--label &--label__value:nth-of-type(1) {
+            color: #4c4c4c;
+        }
+    }
 
     &--checkbox {
         display: inline-flex;
@@ -8,43 +71,6 @@
         border-radius: 8px;
         border: 1px solid var(--border-card-color);
     }
-
-    &--toggle {
-        display: none;
-    }
-
-    &--option {
-        padding: 10px 24px;
-        color: var(--button-color);
-        background: var(--body-bg);
-        font-size: 1.4rem;
-        font-weight: 600;
-        line-height: 150%;
-        cursor: pointer;
-
-        &:hover {
-            opacity: 0.9;
-        }
-    }
-
-    &--toggle:checked + &--option {
-        border-radius: 6px;
-        background: var(--choice-btn-bg);
-        color: var(--desc-banner-color);
-    }
-
-    &--toggle:not(:checked) + &--option {
-        color: var(--button-color);
-        background: var(--body-bg);
-    }
 }
 
-.pricing__sale-desc {
-    margin: 10px 0 100px;
-    display: block;
-    text-align: center;
-    color: var(--desc-color);
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 150%;
-}
+

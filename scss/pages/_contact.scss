@@ -1,0 +1,82 @@
+@use "../abstracts";
+// Hero
+.hero__contact {
+    padding-right: 105px;
+    padding-left: 105px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    @include abstracts.screen(lg) {
+        grid-template-columns: 1fr 1fr;
+        padding-right: 50px;
+        padding-left: 50px;
+        gap: 15px;
+
+    }
+    @include abstracts.screen(md) {
+        grid-template-columns: 1fr;
+    }
+
+    & .footer__down--info__item {
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex: 1;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+// Contact
+.contact {
+    padding: 60px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    border: 1px solid var(--border-card-color);
+    background: var(--card-bg);
+    box-shadow: 10px 10px 50px 0px rgba(0, 98, 255, 0.03);
+
+    @include abstracts.screen(lg) {
+        grid-template-columns: 1fr;
+    }
+
+    &__address {
+        &--map {
+            width: 100%;
+            &__iframe {
+                width: inherit;
+            }
+        }
+        &--socials {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            justify-content: flex-end;
+            @include abstracts.screen(lg) {
+                margin-top: 35px;
+                justify-content: center;
+            }
+        }
+
+        &--app {
+            padding: 16px;
+            border-radius: 6px;
+            background: var(--button-bg);
+
+            &__icon {
+                width: 20px;
+                height: 20px;
+                object-fit: cover;
+            }
+        }
+    }
+}

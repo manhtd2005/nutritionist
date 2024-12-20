@@ -1,0 +1,45 @@
+.form {
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        &--group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        &--label {
+            color: #4c4c4c;
+            font-size: 1.6rem;
+            font-weight: 600;
+            line-height: 24px; /* 150% */
+        }
+
+        &--input {
+            padding: 20px;
+            margin-bottom: 20px;
+            width: inherit;
+            border-radius: 6px;
+            border: 1px solid var(--border-card-color);
+            background: var(--border-card-color);
+            color: var(--desc-color);
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 1.25;
+            resize: none;
+        }
+
+        &--limit {
+            margin-left: auto;
+        }
+    }
+
+    &__btn {
+        margin-top: 40px;
+        width: 100%;
+    }
+}

@@ -1,16 +1,57 @@
+@use "../abstracts";
+
 // Hero
 .hero__about {
-    margin: 100px 0;
+    margin: 260px 0 100px;
+
+    @include abstracts.screen(lg) {
+        margin: 200px 0 100px;
+
+    }
+
     &--blockList {
+        display: flex;
+        align-items: stretch;
+        gap: 10px;
         &__item {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
             border-radius: 8px;
-            background: var(--button-bg);
+
             &--mini {
                 display: inline-block;
+                border-radius: 8px;
+                background: var(--button-bg);
             }
+
+            &--big {
+                padding: 50px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--button-bg);
+            }
+
             &--logo {
-                width: 100px;
-                height: 100px;
+                width: 300px;
+                height: 300px;
+
+                @include abstracts.screen(xl) {
+                    width: 200px;
+                    height: 200px;
+                }
+
+                @include abstracts.screen(lg) {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                @include abstracts.screen(md) {
+                    width: 100px;
+                    height: 100px;
+                }
             }
         }
     }
@@ -41,17 +82,19 @@
 
         &--content {
             padding: 0 60px;
-            display:inline-flex;
+            display: inline-flex;
             text-align: left;
             flex-direction: column;
+            justify-content: center;
 
-            &__left{
+            &__left {
                 text-align: right;
             }
 
             &__heading {
-                display: inline;
-                border-bottom: 3px solid var(--Green-70, #cbea7b);
+                display: inline-block;
+                border-bottom: 3px solid (--Green-70, #cbea7b);
+                padding-bottom: 5px;
             }
         }
     }

@@ -1,4 +1,11 @@
+@use "../abstracts";
+
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     background: var(--banner-bg);
 
     &__top {
@@ -19,7 +26,13 @@
                 content: url(../../assets/icon/lapter.svg);
                 display: inline-block;
                 position: absolute;
-                left: 0;
+                left: -40px;
+                @include abstracts.screen(md) {
+                    left: -100px;
+                    bottom: -5px;
+                    transform: rotate(-30deg);
+                    z-index: -1;
+                }
             }
 
             &::after {
@@ -27,7 +40,13 @@
                 transform: scaleX(-1); // Lật ảnh lại
                 display: inline-block;
                 position: absolute;
-                right: 0;
+                right: -40px;
+                @include abstracts.screen(md) {
+                    right: -100px;
+                    bottom: -5px;
+                    transform: rotate(30deg);
+                    z-index: -1;
+                }
             }
         }
 
@@ -58,6 +77,57 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+        }
+
+
+        &--label{
+            display: none;
+        }
+        &--menu {
+            display: none;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+
+            &:hover {
+                background: var(--button-bg);
+                border-radius: 40%;
+            }
+            @include abstracts.screen(md) {
+                display: initial !important;
+            }
+        }
+
+        &--overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.5s ease;
+        }
+
+        &--menu__drawer {
+            position: fixed;
+            inset: 0 0 0 60%;
+            background: #1a3129;
+            z-index: 2;
+            padding: 60px;
+            transform: translateX(100%);
+            transition: 0.5s ease;
+        }
+
+         
+
+        &--checkbox:checked ~ &--overlay {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &--checkbox:checked ~ &--menu__drawer {
+            transform: translateX(0);
+
         }
     }
 }

@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 .logo {
     display: flex;
     align-items: center;
@@ -15,5 +17,9 @@
         color: var(--body-bg);
         font-weight: 600;
         opacity: 0.9;
+
+        @include abstracts.screen(md) {
+            font-size: 1.5em;
+        }
     }
 }

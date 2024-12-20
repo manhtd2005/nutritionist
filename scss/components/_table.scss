@@ -1,0 +1,44 @@
+.comnpare {
+    margin-bottom: 100px;
+    padding: 50px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-card-color);
+    border-radius: 12px;
+
+    &__row {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+    }
+
+    &__title {
+        margin-right: 30px;
+        padding: 16px 24px;
+        display: inline-block;
+        color: var(--desc-banner-color);
+        background: var(--banner-inner-bg);
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 150%; /* 30px */
+        border-radius: 8px;
+
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
+
+    &__content {
+        padding: 0 24px;
+        color: var(--button-color);
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 154%; /* 27.72px */
+    }
+
+    &__tick{
+        display: inline-block;
+        padding: 6px;
+        background: var(--button-bg);
+        border-radius: 6px;
+    }
+}

@@ -42,29 +42,36 @@
                         <span class="logo__brand">Nutritionist</span>
                     </a>
                     <nav class="navbar">
+                        <a href="./index.html" class="logo navbar__logo">
+                            <img src="./assets/icon/logo.svg" alt="" class="logo__icon">
+                            <span class="logo__brand">Nutritionist</span>
+                        </a>
+
                         <ul class="navbar__list">
                             <li class="navbar__item">
-                                <a href="./index.html" class="navbar__item--link">Home</a>
+                                <a href="#!" class="navbar__item--link">Home</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="#!" class="navbar__item--link">About</a>
+                                <a href="./about.html" class="navbar__item--link">About</a>
                             </li>
                             <li class="navbar__item">
                                 <a href="./team.html" class="navbar__item--link">Team</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="" class="navbar__item--link">Process</a>
+                                <a href="./process.html" class="navbar__item--link">Process</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="" class="navbar__item--link">Pricing</a>
+                                <a href="./pricing.html" class="navbar__item--link">Pricing</a>
                             </li>
                             <li class="navbar__item">
-                                <a href="" class="navbar__item--link">Blog</a>
+                                <a href="./blog.html" class="navbar__item--link">Blog</a>
                             </li>
                         </ul>
 
-                        <button class="btn__primary">Contact Us</button>
+                        <a href="./contact.html" class="btn__primary">Contact Us</a>
                     </nav>
+
+                    <img src="./assets/icon/menu.svg" alt="" class="header__down--menu">
                 </div>
             </div>
         </div>
@@ -73,29 +80,23 @@
     <!-- Hero -->
     <section class="hero__about">
         <div class="container">
-            <div class="hero__about--blockList row row-cols-3 g-2">
-                <div class="col">
-                    <div class="hero__about--blockList__item row row-cols-2 g-2">
-                        <div class="hero__about--blockList__item--mini"></div>
-                        <div class="hero__about--blockList__item--mini"></div>
-                        <div class="hero__about--blockList__item--mini"></div>
-                        <div class="hero__about--blockList__item--mini"></div>
-                    </div>
+            <div class="hero__about--blockList">
+                <div class="hero__about--blockList__item">
+                    <div class="hero__about--blockList__item--mini"></div>
+                    <div class="hero__about--blockList__item--mini"></div>
+                    <div class="hero__about--blockList__item--mini"></div>
+                    <div class="hero__about--blockList__item--mini"></div>
                 </div>
 
-                <div class="col">
-                    <div class="hero__about--blockList__item">
-                        <img src="./assets/icon/logo.svg" alt="" class="hero__about--blockList__item--logo">
-                    </div>
+                <div class="hero__about--blockList__item hero__about--blockList__item--big">
+                    <img src="./assets/icon/logodark.svg" alt="" class="hero__about--blockList__item--logo">
                 </div>
 
-                <div class="col">
-                    <div class="hero__about--blockList__item row row-cols-2 g-2">
-                        <div class="hero__about--blockList__item--mini"></div>
-                        <div class="hero__about--blockList__item--mini"></div>
-                        <div class="hero__about--blockList__item--mini"></div>
-                        <div class="hero__about--blockList__item--mini"></div>
-                    </div>
+                <div class="hero__about--blockList__item">
+                    <div class="hero__about--blockList__item--mini"></div>
+                    <div class="hero__about--blockList__item--mini"></div>
+                    <div class="hero__about--blockList__item--mini"></div>
+                    <div class="hero__about--blockList__item--mini"></div>
                 </div>
             </div>
         </div>
@@ -138,11 +139,11 @@
                     personalized nutrition coaching. Our certified nutritionists are here to guide you on your weight
                     loss journey.</p>
             </div>
-            <div class="story__table row row-cols-2 g-0">
+            <div class="story__table row row-cols-2 row-cols-lg-1 g-0">
                 <div class="col">
                     <img src="./assets/img/story1.jpg" alt="" class="story__table--media">
                 </div>
-                <div class="col">
+                <div class="col d-flex">
                     <div class="story__table--content">
                         <h5 class="heading__secondary story__table--content__heading">Inspiring Transformations Story
                         </h5>
@@ -156,7 +157,7 @@
                         <p class="desc__primary">July 1, 2025</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex">
                     <div class="story__table--content story__table--content__left">
                         <h5 class="heading__secondary story__table--content__heading">Recognition and Accolades Story
                         </h5>
@@ -173,7 +174,7 @@
                 <div class="col">
                     <img src="./assets/img/story3.jpg" alt="" class="story__table--media">
                 </div>
-                <div class="col">
+                <div class="col d-flex">
                     <div class="story__table--content">
                         <h5 class="heading__secondary story__table--content__heading">Continued Growth Story
                         </h5>
@@ -183,7 +184,7 @@
                         <p class="desc__primary">November 2, 2021</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex">
                     <div class="story__table--content story__table--content__left">
                         <h5 class="heading__secondary story__table--content__heading">Collaborating for Success Story
                         </h5>
@@ -201,24 +202,27 @@
                 <div class="col">
                     <img src="./assets/img/story5.jpg" alt="" class="story__table--media">
                 </div>
-                <div class="col">
+                <div class="col d-flex">
                     <div class="story__table--content">
                         <h5 class="heading__secondary story__table--content__heading">Enhanced Support Story
-                        </h5>In response to the growing demand for personalized nutrition coaching, Nutritionist
-                        expanded its team of qualified nutritionists and dietitians. This milestone enabled us to
-                        provide even more individualized care and support to our clients.</p>
+                        </h5>
+                        <p class="desc__primary">In response to the growing demand for personalized nutrition coaching,
+                            Nutritionist
+                            expanded its team of qualified nutritionists and dietitians. This milestone enabled us to
+                            provide even more individualized care and support to our clients.</p>
+                        </p>
                         <p class="desc__primary">April 1, 2018</p>
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col d-flex">
                     <div class="story__table--content story__table--content__left">
-                        <h5 class="heading__secondary story__table--content__heading">Innovating for Clients Story
-                            <p class="desc__primary">Nutritionist introduced a mobile app, revolutionizing the way
-                                clients engage with their personalized nutrition plans. The app allowed for easy
-                                tracking of progress, access to resources, and seamless communication with their
-                                dedicated nutrition coaches.</p>
-                            <p class="desc__primary">January 20, 2017</p>
+                        <h5 class="heading__secondary story__table--content__heading">Innovating for Clients Story</h5>
+                        <p class="desc__primary">Nutritionist introduced a mobile app, revolutionizing the way
+                            clients engage with their personalized nutrition plans. The app allowed for easy
+                            tracking of progress, access to resources, and seamless communication with their
+                            dedicated nutrition coaches.</p>
+                        <p class="desc__primary">January 20, 2017</p>
                     </div>
                 </div>
 
@@ -229,7 +233,7 @@
                 <div class="col">
                     <img src="./assets/img/story7.jpg" alt="" class="story__table--media">
                 </div>
-                <div class="col">
+                <div class="col d-flex">
                     <div class="story__table--content">
                         <h5 class="heading__secondary story__table--content__heading">Celebrating Success Stories
                         </h5>
@@ -240,7 +244,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col d-flex">
                     <div class="story__table--content story__table--content__left">
                         <h5 class="heading__secondary story__table--content__heading">Expanding Reach Story
                         </h5>
@@ -258,7 +262,7 @@
                 <div class="col">
                     <img src="./assets/img/story9.jpg" alt="" class="story__table--media">
                 </div>
-                <div class="col">
+                <div class="col d-flex">
                     <div class="story__table--content">
                         <h5 class="heading__secondary story__table--content__heading">Research and Expertise Story
                         </h5>
@@ -269,7 +273,7 @@
                         <p class="desc__primary">March 15, 2012</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col d-flex">
                     <div class="story__table--content story__table--content__left">
                         <h5 class="heading__secondary story__table--content__heading">The Inception Story
                         </h5>
@@ -293,8 +297,8 @@
                 <p class="desc__primary">At Nutritionist, we take pride in our accomplishments and the positive impact
                     we have made on the lives of our clients. Here are some of our notable achievements</p>
             </div>
-            <div class="achivement__down row row-cols-2 g-2">
-                <div class="col">
+            <div class="achivement__down row row-cols-2 row-cols-xl-1 g-2 g-xl-3">
+                <div class="col d-flex align-items-stretch">
                     <article class="card__primary">
                         <div class="card__primary--content">
                             <div class="card__primary--content__icon">
@@ -308,7 +312,7 @@
                     </article>
                 </div>
 
-                <div class="col">
+                <div class="col d-flex align-items-stretch">
                     <article class="card__primary">
                         <div class="card__primary--content">
                             <div class="card__primary--content__icon">
@@ -322,7 +326,7 @@
                     </article>
                 </div>
 
-                <div class="col">
+                <div class="col d-flex align-items-stretch">
                     <article class="card__primary">
                         <div class="card__primary--content">
                             <div class="card__primary--content__icon">
@@ -336,7 +340,7 @@
                     </article>
                 </div>
 
-                <div class="col">
+                <div class="col d-flex align-items-stretch">
                     <article class="card__primary">
                         <div class="card__primary--content">
                             <div class="card__primary--content__icon">
@@ -360,7 +364,7 @@
                     and live healthier, happier lives. Join Nutritionist today and embark on your own transformative
                     journey towards optimal health and well-being.</p>
             </div>
-            <button class="btn__primary">Book a Demo</button>
+            <a href="./contact.html" class="btn__primary">Book a Demo</a>
         </section>
 
     </main>
@@ -374,25 +378,25 @@
                     <img src="./assets/icon/logo.svg" alt="" class="logo__icon">
                     <span class="logo__brand">Nutritionist</span>
                 </a>
-                <nav class="navbar">
+                <nav class="footer__navbar">
                     <ul class="navbar__list">
                         <li class="navbar__item">
-                            <a href="./index.html" class="navbar__item--link">Home</a>
+                            <a href="#!" class="navbar__item--link">Home</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#!" class="navbar__item--link">About</a>
+                            <a href="./about.html" class="navbar__item--link">About</a>
                         </li>
                         <li class="navbar__item">
                             <a href="./team.html" class="navbar__item--link">Team</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__item--link">Process</a>
+                            <a href="./process.html" class="navbar__item--link">Process</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__item--link">Pricing</a>
+                            <a href="./pricing.html" class="navbar__item--link">Pricing</a>
                         </li>
                         <li class="navbar__item">
-                            <a href="" class="navbar__item--link">Blog</a>
+                            <a href="./blog.html" class="navbar__item--link">Blog</a>
                         </li>
                     </ul>
                 </nav>
@@ -419,10 +423,11 @@
                         <span class="footer__down--info__item--contact">Somewhere in the World</span>
                     </div>
                 </div>
-                <span class="footer__down--nocopy">© 2023 Nutritionist. All rights reserved.</p>
+                <span class="footer__down--nocopy">© 2023 Nutritionist. All rights reserved.</span>
             </div>
         </div>
     </footer>
     </body>
+    <script type="module" src="./js/app.js"></script>
 
 </html>

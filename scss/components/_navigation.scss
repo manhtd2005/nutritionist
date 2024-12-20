@@ -1,11 +1,31 @@
+@use "../abstracts";
+
 .navbar {
     display: flex;
     align-items: center;
     gap: 20px;
+    @include abstracts.screen(md) {
+        display: none;
+        padding: 50px 100px;
+        background: #234338;
+    }
 
+    &__logo{
+        display: none;
+
+        @include abstracts.screen(md) {
+            display: initial;
+        }
+    }
+    
     &__list {
         display: flex;
         align-items: center;
+        @include abstracts.screen(md) {
+            align-items: flex-start;
+            gap: 20px;  
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -15,10 +35,23 @@
             font-size: 1.4rem;
             font-weight: 600;
             line-height: 1.5;
+            @include abstracts.screen(md) {
+                font-size: 1.8rem;
+            }
         }
 
         &:hover &--link {
             color: var(--button-bg);
         }
+    }
+}
+
+.header__down--menu__drawer {
+    & .navbar{
+        padding: 0;
+        margin-top: 10px;
+        flex-direction: column;
+        display: flex;
+        background: #1a3129;
     }
 }

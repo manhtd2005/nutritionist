@@ -1,5 +1,6 @@
 @use "sass:math";
 
+//
 $grid-breakpoints: (
     xxl: 1400px,
     xl: 1200px,
@@ -7,6 +8,7 @@ $grid-breakpoints: (
     md: 768px,
     sm: 576px,
 );
+//
 $container-max-widths: (
     sm: 100%,
     md: 540px,

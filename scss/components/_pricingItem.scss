@@ -1,12 +1,38 @@
 .pricing__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 50px;
     border-radius: 12px;
     border: 1px solid var(--border-card-color);
     background: var(--card-bg);
+    transition: 0.75s ease;
 
-    &:hover {
-        margin-top: -45px;
-        transition: 0.75;
+    &--check{
+        background: #BCDCD1;
+
+        &:hover{
+            background: #79B9A4;
+        }
+    }
+
+    &--textContanier {
+        margin: 30px 0;
+        border-radius: 8px;
+        border: 1px solid var(--Green-85, #e5f5bd);
+        background: var(--Green-90, #eef8d3);
+    }
+
+    &--textContanier &--desc:not(:first-child) {
+        border-top: 1px solid var(--Green-80, #dcf1a7);
+    }
+
+    &--textContanier &--desc {
+        margin-bottom: initial;
+        padding: 20px 24px;
+    }
+    &:hover{
+        transform: translateY(-8%);
         background: var(--hover-card-bg);
         cursor: pointer;
     }
@@ -16,11 +42,19 @@
     }
 
     &--desc {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+    }
+
+    &--listPrice{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     &--price {
-        display: block;
+        display: flex;
+        align-items: center;
         margin-bottom: 33px;
         color: var(--desc-color);
         font-size: 1.8rem;
@@ -29,10 +63,26 @@
 
         &__sale {
             color: var(--banner-inner-bg);
-            font-size: 5rem;
+            font-size: 3rem;
             font-weight: 700;
             line-height: 87.523%;
         }
+
+        &__hidden{
+            display: none;
+            text-decoration: none !important;
+        }
+    }
+
+    &--warning {
+        margin-bottom: 30px;
+        padding: 20px 24px;
+        color: var(--desc-banner-color);
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+        border-radius: 8px;
+        background: var(--banner-inner-bg);
     }
 
     &--btn {
